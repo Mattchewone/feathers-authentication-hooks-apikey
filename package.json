@@ -1,7 +1,7 @@
 {
   "name": "feathers-authentication-hooks-apikey",
   "description": "Add custom authentication to your data",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/Mattchewone/feathers-authentication-hooks-apikey",
   "main": "lib/",
   "keywords": [
