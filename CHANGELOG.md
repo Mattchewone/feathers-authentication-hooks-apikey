@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.0.2](https://github.com/Mattchewone/feathers-authentication-hooks-apikey/tree/v0.0.2) (2018-05-11)
+[Full Changelog](https://github.com/Mattchewone/feathers-authentication-hooks-apikey/compare/v0.0.1...v0.0.2)
+
 ## [v0.0.1](https://github.com/Mattchewone/feathers-authentication-hooks-apikey/tree/v0.0.1) (2018-03-06)
 
 
