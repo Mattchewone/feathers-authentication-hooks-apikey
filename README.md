@@ -22,11 +22,12 @@ TBD
 Here's an example hook adding authentication using `feathers-authentication-hooks-apikey`. 
 
 ```js
-const { addAuthenticationToData } = require('feathers-authentication-hooks-apikey')
+const { addAuthentication } = require('feathers-authentication-hooks-apikey')
 
 module.exports = {
   before: {
-    patch: [ addAuthenticationToData({ secret: 'my-super-secret' }) ]
+    find: [ addAuthentication({ secret: 'my-super-secret' }) ],
+    patch: [ addAuthentication({ secret: 'my-super-secret' }) ]
   }
 }
 ```
@@ -38,6 +39,8 @@ const { authenticateFrom } = require('feathers-authentication-hooks-apikey')
 
 module.exports = {
   before: {
+    // if `required: false` it will not fail if the secret is not present
+    find: [ authenticateFrom({ path: 'params.query', secret: 'my-super-secret', required: false }) ]
     patch: [ authenticateFrom({ path: 'data', secret: 'my-super-secret', required: true }) ]
   }
 }
